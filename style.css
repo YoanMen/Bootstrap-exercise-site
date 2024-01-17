@@ -1,0 +1,22 @@
+:root {}
+
+.hidden-desktop {
+  display: block;
+
+}
+
+.hidden-mobile {
+  display: none;
+
+}
+
+@media screen and (max-width:576px) {
+  .hidden-desktop {
+    display: none;
+  }
+
+  .hidden-mobile {
+    display: block;
+  }
+
+}
