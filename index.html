@@ -19,9 +19,9 @@
 
       <ul class="nav nav-pills" aria-label="Menu Navigation List:">
         <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Accueil</a></li>
-        <li class="nav-item"><a href="/#Association" class="nav-link">Notre association</a></li>
-        <li class="nav-item"><a href="/#Testimonial" class="nav-link">Témoignages</a></li>
-        <li class="nav-item"><a href="/#Support_us" class="nav-link">Nous soutenir</a></li>
+        <li class="nav-item"><a href="#Association" class="nav-link">Notre association</a></li>
+        <li class="nav-item"><a href="#Testimonial" class="nav-link">Témoignages</a></li>
+        <li class="nav-item"><a href="#Support_us" class="nav-link">Nous soutenir</a></li>
         <li class="nav-item"><a href="/events" class="nav-link">Nos prochains évenement</a></li>
         <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
       </ul>
@@ -34,7 +34,9 @@
     <header>
       <nav class="navbar bg-body-tertiary fixed-top shadow   ">
         <div class="container-fluid">
-          <h1> Solidarité Ensemble </h1>
+          <a class="nav-link" href="/">
+            <h1> Solidarité Ensemble </h1>
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,31 +45,35 @@
             aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Solidarité Ensemble</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button" id="close_button" class="btn-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Accueil</a></li>
-                <li class="nav-item"><a href="/#Association" class="nav-link">Notre association</a></li>
-                <li class="nav-item"><a href="/#Testimonial" class="nav-link">Témoignages</a></li>
-                <li class="nav-item"><a href="/#Support_us" class="nav-link">Nous soutenir</a></li>
+                <li class="nav-item"><a href="/" class="nav-link " aria-current="page">Accueil</a></li>
+                <li class="nav-item"><a href="#Association" class="nav-link">Notre association</a></li>
+                <li class="nav-item"><a href="#Testimonial" class="nav-link" data-bs-dismiss="offcanvas">Témoignages</a>
+                </li>
+                <li class="nav-item"><a href="#Support_us" class="nav-link">Nous soutenir</a></li>
                 <li class="nav-item"><a href="/events" class="nav-link">Nos prochains évenement</a></li>
                 <li class="nav-item"> <a class="nav-link" href="/contact">Contact</a></li>
               </ul>
-
             </div>
           </div>
         </div>
       </nav>
     </header>
   </div>
-
-
   <!-- END MOBIL NAV -->
-  <div class="px-4 pt-5 my-5 text-center min-vh-100 ">
+
+  <div class="px-4 pt-5 my-5 text-center  ">
     <h1 class="display-4 fw-bold text-body-emphasis">Solidarité Ensemble</h1>
     <div class="col-lg-10 mx-auto">
-      <p class="lead mb-4" aria-label="Presentation text"><strong>Solidarité Ensemble</strong> est une association
+      <p class="lead mb-4  contrain-width" aria-label="Presentation text"><strong>Solidarité
+          Ensemble</strong>
+        est
+        une
+        association
         fictive axée sur l'aide
         humanitaire et la
         promotion de la solidarité. Son objectif principal est de rassembler des ressources pour soutenir les
@@ -90,41 +96,45 @@
   </div>
 
 
-  <main class="flex-grow-1" aria-label="main">
+  <main class="flex-grow-1 " aria-label="main">
+    <!-- SECTION ASSOCIATION -->
     <section id="Association"
       class="d-flex flex-wrap  p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center justify-content-center  rounded-3 border shadow-lg mb-5"
       aria-label="Association Section">
-      <div class=" col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h2 class="display-4 fw-bold lh-1 text-body-emphasis">Notre Association</h2>
-        <p class="lead" aria-label="Presentation association">Nous sommes une association dévouée à promouvoir la
-          solidarité et l'unité au sein de notre
-          communauté. Fondée en 1987, notre objectif est de renforcer les liens entre les membres de la
-          société et de créer un environnement où chacun se sent soutenu et inclus. Nous croyons en des valeurs
-          fondamentales telles que l'empathie, l'égalité et la collaboration, et nous nous efforçons de les incarner
-          dans toutes nos actions.
-          <br><br>
-          Chez <strong>Solidarité Ensemble</strong>, nous nous engageons à développer des initiatives qui favorisent
-          la
-          solidarité et
-          l'entraide. Grâce à notre dévouement et à l'aide de nos membres passionnés, nous travaillons à créer un
-          impact
-          positif durable dans notre communauté.
-          <br><br>
-          Explorez notre site pour en savoir plus sur notre histoire, nos projets actuels et comment vous pouvez vous
-          impliquer. Rejoignez-nous dans cette aventure, car ensemble, nous pouvons construire un avenir plus
-          solidaire.
-          <br><br>
-          Merci de soutenir notre cause et de faire partie de la famille Solidarité Ensemble !
-        </p>
-
-      </div>
-      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg d-flex   " aria-label="Picture Container">
-        <img src="/assets/image/pexels-elevate-1267329.jpg" class="img-fluid  rounded-lg-3"
-          alt="Image of a yellow forklift transporting cartons containing goods in a warehouse" width="700"
-          loading="lazy" alt="">
+      <div class="row align-items-center g-lg-5 py-5  contrain-width">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h2 class="display-4 fw-bold lh-1 text-body-emphasis contrain-width">Notre Association</h2>
+          <p class="lead " aria-label="Presentation association">Nous sommes une association dévouée à
+            promouvoir la
+            solidarité et l'unité au sein de notre
+            communauté. Fondée en 1987, notre objectif est de renforcer les liens entre les membres de la
+            société et de créer un environnement où chacun se sent soutenu et inclus. Nous croyons en des valeurs
+            fondamentales telles que l'empathie, l'égalité et la collaboration, et nous nous efforçons de les incarner
+            dans toutes nos actions.
+            <br><br>
+            Chez <strong>Solidarité Ensemble</strong>, nous nous engageons à développer des initiatives qui favorisent
+            la
+            solidarité et
+            l'entraide. Grâce à notre dévouement et à l'aide de nos membres passionnés, nous travaillons à créer un
+            impact
+            positif durable dans notre communauté.
+            <br><br>
+            Explorez notre site pour en savoir plus sur notre histoire, nos projets actuels et comment vous pouvez vous
+            impliquer. Rejoignez-nous dans cette aventure, car ensemble, nous pouvons construire un avenir plus
+            solidaire.
+            <br><br>
+            Merci de soutenir notre cause et de faire partie de la famille Solidarité Ensemble !
+          </p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5 overflow-hidden rounded-2 ">
+          <img src=" /assets/image/pexels-elevate-1267329.jpg" class="rounded-2 img-fluid "
+            alt=" Image of a yellow forklift transporting cartons containing goods in a warehouse" loading="lazy">
+        </div>
       </div>
     </section>
+    <!-- END SECTION ASSOCIATION -->
 
+    <!-- SECTION TESTIMONIAL -->
     <section id="Testimonial"
       class="d-flex flex-wrap p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center justify-content-center  rounded-3 border shadow-lg mb-5 "
       aria-label="Section testimonial">
@@ -169,12 +179,13 @@
         </div>
       </div>
     </section>
+    <!-- END SECTION TESTIMONIAL -->
 
-
+    <!-- SECTION SUPPORT US -->
     <section id="Support_us"
-      class="d-flex flex-wrap p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center justify-content-center  rounded-3 border shadow-lg mb-5 "
+      class=" d-flex flex-wrap p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center justify-content-center  rounded-3 border shadow-lg mb-5 "
       aria-label="Section Support us">
-      <div class=" p-3 p-lg-5 pt-lg-3 ">
+      <div class=" p-3 p-lg-5 pt-lg-3 contrain-width ">
         <h2 class="display-4 fw-bold lh-1 text-body-emphasis  ">Nous soutenir</h2>
         <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
           <div class="col d-flex flex-column align-items-start gap-2">
@@ -184,9 +195,8 @@
               force de la solidarité. Chaque geste, petit ou grand, peut avoir un impact significatif sur la vie des
               personnes dans le besoin. Ensemble, nous pouvons construire un avenir où la compassion et l'entraide sont
               les piliers de notre société.</p>
-            <a href="/support-us" class="btn btn-primary btn-lg w-100  ">Soutenir</a>
+            <a href="/support-us" class="btn btn-primary btn-lg">Nous soutenir</a>
           </div>
-
           <div class="col">
             <div class="row row-cols-1 row-cols-sm-2 g-4">
               <div class="col d-flex flex-column gap-2">
@@ -199,7 +209,6 @@
                   financer nos initiatives humanitaires, de fournir des secours d'urgence et de soutenir des projets
                   éducatifs. Aidez-nous à faire une différence durable.</p>
               </div>
-
               <div class="col d-flex flex-column gap-2">
                 <div style="width: 48px; height: 48px;" aria-label="icon container"
                   class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
@@ -225,39 +234,38 @@
             </div>
           </div>
         </div>
-
     </section>
+    <!--END SECTION TESTIMONIAL -->
+
   </main>
 
 
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top bg-white"
+  <!-- FOOTER -->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top bg-white "
     aria-label="Footer">
-    <div class="col-md-4 d-flex align-items-center ms-5">
+    <div class="col-md-4 d-flex align-items-center ms-5 ">
 
-      <div class="d-flex flex-column ">
+      <div class="d-flex flex-column contrain-width">
         <span class="mb-3 mb-md-0 text-body-secondary" aria-label="Creator :">© 2024 created by Yoan Ménard for
           exercise</span>
         <span class="mb-3 mb-md-0 text-body-secondary" aria-label="Use of">Bootstrap, AI image and <a
             href="https://www.pexels.com/">Pexels</a></span>
-
       </div>
-
     </div>
-
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-5" aria-label="Link to social networks :">
       <li class="ms-3"><a class="text-body-secondary" href="#"> <i class="bi bi-twitter" aria-label="Twitter"></i></a>
       </li>
       <li class="ms-3"><a class="text-body-secondary" href="#"> <i class="bi bi-instagram"
             aria-label="Instagram"></i></a></li>
       <li class="ms-3"><a class="text-body-secondary" href="#"> <i class="bi bi-facebook"
-            aria-label="Facebook"></i>></i></a>
+            aria-label="Facebook"></i></i></a>
       </li>
     </ul>
   </footer>
+  <!-- END FOOTER -->
 
 
-
-
+  <script src="/script.js"></script>
   <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>

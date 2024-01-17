@@ -1,5 +1,14 @@
 :root {}
 
+
+.contrain-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+
 .hidden-desktop {
   display: block;
 
