@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solidarité Ensemble | Events</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column min-vh-100 ">
+
+  <!-- DESKTOP NAV -->
+  <div class=" hidden-desktop  justify-content-center">
+    <header class="d-flex justify-content-center py-3" aria-label="Menu">
+
+      <ul class="nav nav-pills" aria-label="Menu Navigation List:">
+        <li class="nav-item"><a href="/" class="nav-link " aria-current="page">Accueil</a></li>
+        <li class="nav-item"><a href="/#Association" class="nav-link">Notre association</a></li>
+        <li class="nav-item"><a href="/#Testimonial" class="nav-link">Témoignages</a></li>
+        <li class="nav-item"><a href="/#Support_us" class="nav-link">Nous soutenir</a></li>
+        <li class="nav-item"><a href="/events.html" class="nav-link active">Nos prochains évenement</a></li>
+        <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+      </ul>
+    </header>
+  </div>
+  <!-- END DESKTOP NAV -->
+
+  <!-- MOBIL NAV -->
+  <div class="hidden-mobile pt-4">
+    <header>
+      <nav class="navbar bg-body-tertiary fixed-top shadow   ">
+        <div class="container-fluid">
+          <a class="nav-link" href="/">
+            <h1> Solidarité Ensemble </h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Solidarité Ensemble</h5>
+              <button type="button" id="close_button" class="btn-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Accueil</a></li>
+                <li class="nav-item"><a href="/#Association" class="nav-link">Notre association</a></li>
+                <li class="nav-item"><a href="/#Testimonial" class="nav-link"
+                    data-bs-dismiss="offcanvas">Témoignages</a>
+                </li>
+                <li class="nav-item"><a href="/#Support_us" class="nav-link">Nous soutenir</a></li>
+                <li class="nav-item"><a href="/events.html" class="nav-link active">Nos prochains évenement</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <!-- END MOBIL NAV -->
+
+
+  <main class="flex-grow-1 " aria-label="main">
+
+
+    <section id="event">
+      <div class=" col-lg-8 container-fluid pt-5 mx-auto">
+        <h1 class="text-center">Nos prochains événement</h1>
+        <hr class="col-8 mx-auto ">
+        <div class="d-flex flex-wrap  justify-content-center align-items-center gap-5  contrain-width mx-auto  ">
+          <img src="/assets/image/france.svg" width="100%" alt="vector map of France" class="col">
+          <div class=" table-responsive">
+            <table class="table border " aria-describedby="EventTable">
+              <thead>
+                <tr>
+                  <th scope="col">Ville</th>
+                  <th scope="col">Adresse</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Heure</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Paris</td>
+                  <td>Centre des Congrès de Paris</td>
+                  <td>10 janvier 2024</td>
+                  <td>13H30</td>
+                </tr>
+                <tr>
+                  <td>Lyon</td>
+                  <td>Parc de la Tête d'Or</td>
+                  <td>25 février 2024</td>
+                  <td>14h20</td>
+
+                </tr>
+                <tr>
+                  <td>Marseille</td>
+                  <td>Palais des Congrès de Marseille</td>
+                  <td>5 mars 2024</td>
+                  <td>18H00</td>
+
+                </tr>
+                <tr>
+                  <td>Bordeaux</td>
+                  <td>CAPC Musée d'Art Contemporain</td>
+                  <td>15 avril 2024</td>
+                  <td>15H30</td>
+                </tr>
+                <tr>
+                  <td>Nantes</td>
+                  <td>La Cité des Congrès</td>
+                  <td>2 mai 2024</td>
+                  <td>13H30</td>
+                </tr>
+                <tr>
+                  <td>Strasbourg</td>
+                  <td>Place Kléber</td>
+                  <td>20 juin 2024</td>
+                  <td>9H30</td>
+                </tr>
+                <tr>
+                  <td>Cannes</td>
+                  <td>Palais des Festivals et des Congrès</td>
+                  <td>8 juillet 2024</td>
+                  <td>14H00</td>
+                </tr>
+                <tr>
+                  <td>Lille</td>
+                  <td>Lille Grand Palais</td>
+                  <td>10 octobre 2024</td>
+                  <td>17H00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top bg-white "
+    aria-label="Footer">
+    <div class="col-md-4 d-flex align-items-center ms-5 ">
+
+      <div class="d-flex flex-column contrain-width">
+        <span class="mb-3 mb-md-0 text-body-secondary" aria-label="Creator :">© 2024 created by Yoan Ménard for
+          exercise</span>
+        <span class="mb-3 mb-md-0 text-body-secondary" aria-label="Use of">Bootstrap, AI image and <a
+            href="https://www.pexels.com/">Pexels</a></span>
+      </div>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-5" aria-label="Link to social networks :">
+      <li class="ms-3"><a class="text-body-secondary" href="#"> <i class="bi bi-twitter" aria-label="Twitter"></i></a>
+      </li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"> <i class="bi bi-instagram"
+            aria-label="Instagram"></i></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"> <i class="bi bi-facebook"
+            aria-label="Facebook"></i></i></a>
+      </li>
+    </ul>
+  </footer>
+  <!-- END FOOTER -->
+
+
+  <script src="/script.js"></script>
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
